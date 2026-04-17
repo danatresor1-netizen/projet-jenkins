@@ -128,7 +128,7 @@ pipeline {
             emailext(
                 subject: "✅ SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: "CI + CD OK : ${env.BUILD_URL}",
-                to: 'babacarane58@hotmail.com'
+                to: 'tresordjoufo2@gmail.com'
             )
         }
 
@@ -143,7 +143,7 @@ Build   : #${env.BUILD_NUMBER}
 URL     : ${env.BUILD_URL}
 Logs    : ${env.BUILD_URL}console
 """,
-                to: 'babacarane58@hotmail.com',
+                to: 'tresordjoufo2@gmail.com',
                 attachLog: true
             )
         }
@@ -154,7 +154,7 @@ Logs    : ${env.BUILD_URL}console
             emailext(
                 subject: "✅ FIXED: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: "Le pipeline est de nouveau stable : ${env.BUILD_URL}",
-                to: 'babacarane58@hotmail.com'
+                to: 'tresordjoufo2@gmail.com'
             )
         }
     }
